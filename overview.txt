@@ -5,6 +5,11 @@ If a user is right/wrong, the game will notify them
 Have an onscreen score counter
 Notify the player they have won once they reach 5 correct answers
 
+**NEXT STEPS** => will be marked off as I go along
+
+- Add HTML elements needed (mainly divs first)
+- Get CSS all set up, need to be able to see the MVP UI onscreen before JS 
+
 **NEED**
 CSS file that contains:
     - Box for trivia question (text in middle)
@@ -22,7 +27,7 @@ HTML file will need:
             => Player input box
             => For each button
             => WRONG box (could also be in middle container)
-    - Buttons for the possible choices (maybe can wrap these all in one)
+    - Buttons for the possible choices
     - ID's or classes for each button & box onscreen
 
 
@@ -31,7 +36,9 @@ HTML file will need:
 
 - Need arrays for questions, possible answers, just wrong answers(?), just correct answers(?), empty to store user answer & use length property to see if winning number condition is met(?)
 
-- Add event listeners on the buttons that listen for clicks, will need a function in there as a parameter that will trigger the 'correct' button & add one to the score OR will light up the 'wrong' button & keep their score the same (use alerts for now, can spruce up late if need be)
+- Add event listeners on the buttons that listen for clicks, will need a function in there as a parameter that will trigger the 'correct' button & add one to the score OR will light up the 'wrong' button & keep their score the same (use alerts for now, can spruce up later if need be)
+
+- Put question possiblities in question box => can then set 1 specific answer to trigger correct & all the others can be wrong
 
 - Will need a condition that checks if the current score is < 5, once it hits 5 it will trigger the YOU WIN message (could flash up too)
 

@@ -1,0 +1,88 @@
+body {
+
+}
+
+.top-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.player-score {
+    width: 50%;
+    text-align: center;
+    justify-content: left;
+    float: left;
+    padding: 20px 20px 20px 20px;
+    background-color: aquamarine;
+    border-width: 30px;
+    margin: 50px 50px;
+    margin-inline: 100px;
+}
+
+.win-box {
+    width: 50%;
+    text-align: center;
+    justify-content: right;
+    float: right;
+    padding: 20px 20px 20px 20px;
+    background-color: blueviolet;
+    border-width: 30px;
+    margin: 50px 50px;
+    margin-inline: 100px;
+}
+
+.middle-container {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.question-box {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-right: 200px;
+    padding-left: 200px;
+    display: inline-block;
+    background-color: gray;
+    margin: 100px;
+}
+
+.wrong {
+    display: flex;
+    margin-left: 900px;
+    margin-right: 35px;
+    justify-content: right;
+    background-color: red;
+}
+
+.bottom-container {
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 35px;
+    padding: 25px;
+    border: royalblue;
+    border-width: 30px;
+}
+
+.A {
+    margin-inline: 15px;
+    padding: 25px;
+}
+
+.B {
+    margin-inline: 15px;
+    padding: 25px;
+}
+
+.C {
+    margin-inline: 15px;
+    padding: 25px;
+}
+
+.D {
+    margin-inline: 15px;
+    padding: 25px;
+}
