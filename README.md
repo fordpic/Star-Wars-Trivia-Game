@@ -19,6 +19,6 @@ Do you think your abilities are the best in the not-so-far-away galaxy? This Sta
 - If a user is right/wrong, the game will notify them
 - Have an onscreen score counter
 - Notify the player they have won once they reach 5 correct answers
-- Stretch Goals
+# Stretch Goals
 - To add a progress bar on screen
 - To add a timer

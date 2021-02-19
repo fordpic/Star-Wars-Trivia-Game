@@ -1,0 +1,38 @@
+**GOALS**
+Have a random question appear on screen
+User will be able to select an answer from 4 possibilities
+If a user is right/wrong, the game will notify them
+Have an onscreen score counter
+Notify the player they have won once they reach 5 correct answers
+
+**NEED**
+CSS file that contains:
+    - Box for trivia question (text in middle)
+    - Box for player input (4 buttons)
+    - Box for player score (current game, up to 5)
+    - A hidden box for 'wrong' answers that flashes when the incorrect choice is made
+    - A hidden or static box for when you 'win'
+
+HTML file will need:
+    - DIVS for => Top container (banner)
+                    => Player score & WIN boxes
+        => Middle container
+            => Trivia question box
+        => Bottom container
+            => Player input box
+            => For each button
+            => WRONG box (could also be in middle container)
+    - Buttons for the possible choices (maybe can wrap these all in one)
+    - ID's or classes for each button & box onscreen
+
+
+**Loose JavaScript Logic**
+- Try & lay out any global variables that you'll need first
+
+- Need arrays for questions, possible answers, just wrong answers(?), just correct answers(?), empty to store user answer & use length property to see if winning number condition is met(?)
+
+- Add event listeners on the buttons that listen for clicks, will need a function in there as a parameter that will trigger the 'correct' button & add one to the score OR will light up the 'wrong' button & keep their score the same (use alerts for now, can spruce up late if need be)
+
+- Will need a condition that checks if the current score is < 5, once it hits 5 it will trigger the YOU WIN message (could flash up too)
+
+- If the winning condition is not met after the event above, will need another function(?) to randomly select & populate a new question & shuffle the current question to the back
