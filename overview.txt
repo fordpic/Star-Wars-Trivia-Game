@@ -7,8 +7,9 @@ Notify the player they have won once they reach 5 correct answers
 
 **NEXT STEPS** => will be marked off as I go along
 
-- Add HTML elements needed (mainly divs first)
-- Get CSS all set up, need to be able to see the MVP UI onscreen before JS 
+- Write out questions, answers, & potential answers
+- Get JS arrays, variables set up
+- Any functions I will need ahead of time?
 
 **NEED**
 CSS file that contains:
@@ -43,3 +44,87 @@ HTML file will need:
 - Will need a condition that checks if the current score is < 5, once it hits 5 it will trigger the YOU WIN message (could flash up too)
 
 - If the winning condition is not met after the event above, will need another function(?) to randomly select & populate a new question & shuffle the current question to the back
+
+
+
+**TRIVIA Q'S**
+
+1. In his first vicious & downright CGI duel with Count Dooku, which limb did Anakin Skywalker lose?
+
+A. His left leg 
+B. The toes on his right foot
+C. His right arm
+D. His left ear
+Answer: C
+
+2. On what planet did the Clone Wars begin?
+
+A. Naboo
+B. Tatooine
+C. Uranus
+D. Geonosis
+Answer: D
+
+3. What world class, dashing young actor played the near invincible Qui-Gon Jinn in the visually stunning Episode 1?
+
+A. Tom Holland
+B. Liam Neeson
+C. Ford Pickert
+D. Sarah Jessica Parker
+Answer: B
+
+4. Who was Luke Skywalker's first master?
+
+A. Obi-Wan Kenobi
+B. Gandhi
+C. Anakin Skywalker
+D. Mace Windu
+Answer: A 
+
+5. What was the name of the most infamous ship in the galaxy? (Hint: It was piloted by Indiana Jones & Bigfoot)
+
+A. Starship STX-90
+B. Copper Cougar
+C. Millenium Falcon
+D. Lost Ark
+Answer: C
+
+6. Which character absolutely annihilates the Death Star?
+
+A. George Lucas
+B. Han Solo
+C. Princess Leia
+D. Luke Skywalker
+Answer: D 
+
+7. What species of humanoids does Chewbacca belong to?
+
+A. Wookie
+B. Cookie
+C. Snooki
+D. Sasquatch
+Answer: A 
+
+8. How far are we really from all this goodness?
+
+A. Far away
+B. Far, far away
+C. Like 2 million miles
+D. Really close actually
+Answer: B 
+
+9. Han Solo has a weirdo wannabe Sith kid with which iconic character (& actress!)?
+
+A. R2-D2
+B. Your mom
+C. Princess Leia
+D. Queen Padme Amidala
+Answer: C 
+
+10. Complete this iconic line: "Luke, I am your ____."
+
+A. Dude
+B. Dad
+C. Parental Unit
+D. Father
+Answer: D
