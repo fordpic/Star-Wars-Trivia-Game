@@ -7,7 +7,6 @@ Notify the player they have won once they reach 5 correct answers
 
 **NEXT STEPS** => will be marked off as I go along
 
-- Write out questions, answers, & potential answers
 - Get JS arrays, variables set up
 - Any functions I will need ahead of time?
 
@@ -49,6 +48,14 @@ HTML file will need:
 
 **TRIVIA Q'S**
 
+Who was Luke Skywalker's first master?
+
+A. Obi-Wan Kenobi
+B. Gandhi
+C. Anakin Skywalker
+D. Mace Windu
+Answer: A 
+
 1. In his first vicious & downright CGI duel with Count Dooku, which limb did Anakin Skywalker lose?
 
 A. His left leg 
@@ -73,13 +80,7 @@ C. Ford Pickert
 D. Sarah Jessica Parker
 Answer: B
 
-4. Who was Luke Skywalker's first master?
 
-A. Obi-Wan Kenobi
-B. Gandhi
-C. Anakin Skywalker
-D. Mace Windu
-Answer: A 
 
 5. What was the name of the most infamous ship in the galaxy? (Hint: It was piloted by Indiana Jones & Bigfoot)
 
