@@ -15,7 +15,7 @@ const questions = [
     answers: {
         a: "His left leg",
         b: "The toes on his right foot",
-        c: "His right arm"
+        c: "His right arm",
         d: "His left ear",
     },
     correctAnswer: "c"
@@ -31,7 +31,8 @@ const questions = [
      correctAnswer: "d"
     },
     {
-	question: "What world class, dashing young actor played the near invincible Qui-Gon Jinn in the visually stunning Episode 1?", answers: {
+	question: "What world class, dashing young actor played the near invincible Qui-Gon Jinn in the visually stunning Episode 1?", 
+    answers: {
         a: "Tom Holland",
         b: "Liam Neeson",
         c: "Ford Pickert",
@@ -105,14 +106,33 @@ const btnA = document.getElementsByClassName("A");
 const btnB = document.getElementsByClassName("B");
 const btnC = document.getElementsByClassName("C");
 const btnD = document.getElementsByClassName("D");
+const next = document.querySelector(".next");
+console.log(next);
 
-let correctNum = 0;
+let currentQuestion = 0;
 
-function isItRight(event) {
-    if (event.target === questions.correctAnswer) {
-        correctNum++;
-        event.target.style.color = 'green';
-    } else {
-        event.target.style.color = 'red';
-    }
-};
+next.addEventListener('click', () => {
+    console.log(questions[currentQuestion].question);
+    currentQuestion++;
+});
+
+
+// console.log(questions[0].correctAnswer)
+
+
+
+// function isItRight(event) {
+//     for (let i = 0; i < questions.length; i++)
+//     if (event.target === questions[i].correctAnswer) {
+//         correctNum++;
+//     }
+//         // event.target.style.color = 'green';
+//     // } else {
+//     //     event.target.style.color = 'red';
+//     // }
+// };
+
+// btnA.addEventListener('click', isItRight("a"));
+// btnB.addEventListener('click', isItRight("b"));
+// btnA.addEventListener('click', isItRight("c"));
+// btnA.addEventListener('click', isItRight("d"));

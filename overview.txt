@@ -7,8 +7,8 @@ Notify the player they have won once they reach 5 correct answers
 
 **NEXT STEPS** => will be marked off as I go along
 
-- Get JS arrays, variables set up
-- Any functions I will need ahead of time?
+- Figure out event listeners & if that function is correct
+- Need a next button, figures 
 
 **NEED**
 CSS file that contains:
