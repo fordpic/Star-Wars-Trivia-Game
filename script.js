@@ -1,4 +1,5 @@
 const playerAnswer = [];
+const verbiage = document.querySelector('h2');
 const questions = [
 	{
         question: "Who was Luke Skywalker's first master? Was it:", 
@@ -102,15 +103,15 @@ const questions = [
 }
 ];
 
-const btnA = document.querySelector(".A");
-const btnB = document.querySelector(".B");
-const btnC = document.querySelector(".C");
-const btnD = document.querySelector(".D");
+const btnA = document.querySelector(".a");
+const btnB = document.querySelector(".b");
+const btnC = document.querySelector(".c");
+const btnD = document.querySelector(".d");
 const next = document.querySelector(".next");
 const questionBox = document.querySelector(".question-box");
-const optionsBox = document.querySelector(".options-box")
+const optionsBox = document.querySelector(".options-box");
 // console.log(optionsBox);
-
+let correctNum = 0;
 let currentQuestion = 0;
 // console.log(questions[currentQuestion].answers);
 
@@ -120,20 +121,20 @@ next.addEventListener('click', () => {
     currentQuestion++;
 });
 
+function isItRight(choice) {
+    console.log(choice.target.className);
+    const target = choice.target.className;
+    if (target === questions[currentQuestion - 1].correctAnswer) {
+        correctNum++;
+        return verbiage.innerText = "Correct! Please hit next to continue";
+    } else {
+        return verbiage.innerText = "You wrong hoe";
+    }
+};
 
+// console.log(questions[currentQuestion].correctAnswer)
 
-// function isItRight(event) {
-//     for (let i = 0; i < questions.length; i++)
-//     if (event.target === questions[i].correctAnswer) {
-//         correctNum++;
-//     }
-//         // event.target.style.color = 'green';
-//     // } else {
-//     //     event.target.style.color = 'red';
-//     // }
-// };
-
-// btnA.addEventListener('click', isItRight("a"));
-// btnB.addEventListener('click', isItRight("b"));
-// btnA.addEventListener('click', isItRight("c"));
-// btnA.addEventListener('click', isItRight("d"));
+btnA.addEventListener('click', isItRight);
+btnB.addEventListener('click', isItRight);
+btnC.addEventListener('click', isItRight);
+btnD.addEventListener('click', isItRight);

@@ -7,8 +7,11 @@ Notify the player they have won once they reach 5 correct answers
 
 **NEXT STEPS** => will be marked off as I go along
 
-- Figure out event listeners & if that function is correct
-- Need a next button, figures 
+- Figure out event listeners for buttons, find way to pass object answer in as parameter to function
+- Need to add a winning condition that will alert you when you have won
+- Then, need to figure out how to get JSON formatting out on answer choices
+- Once those are done, make pretty with CSS
+Then you're done! You got this bro
 
 **NEED**
 CSS file that contains:
