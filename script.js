@@ -102,22 +102,23 @@ const questions = [
 }
 ];
 
-const btnA = document.getElementsByClassName("A");
-const btnB = document.getElementsByClassName("B");
-const btnC = document.getElementsByClassName("C");
-const btnD = document.getElementsByClassName("D");
+const btnA = document.querySelector(".A");
+const btnB = document.querySelector(".B");
+const btnC = document.querySelector(".C");
+const btnD = document.querySelector(".D");
 const next = document.querySelector(".next");
-console.log(next);
+const questionBox = document.querySelector(".question-box");
+const optionsBox = document.querySelector(".options-box")
+// console.log(optionsBox);
 
 let currentQuestion = 0;
+// console.log(questions[currentQuestion].answers);
 
 next.addEventListener('click', () => {
-    console.log(questions[currentQuestion].question);
+    questionBox.innerHTML = questions[currentQuestion].question;
+    optionsBox.innerHTML = JSON.stringify(questions[currentQuestion].answers);
     currentQuestion++;
 });
-
-
-// console.log(questions[0].correctAnswer)
 
 
 
