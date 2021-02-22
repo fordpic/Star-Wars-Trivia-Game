@@ -110,29 +110,37 @@ const btnD = document.querySelector(".d");
 const next = document.querySelector(".next");
 const questionBox = document.querySelector(".question-box");
 const optionsBox = document.querySelector(".options-box");
+const scorebox = document.querySelector(".player-score");
+// console.log(scorebox)
 // console.log(optionsBox);
 let correctNum = 0;
 let currentQuestion = 0;
 // console.log(questions[currentQuestion].answers);
 
 next.addEventListener('click', () => {
+    verbiage.innerText = "";
     questionBox.innerHTML = questions[currentQuestion].question;
     optionsBox.innerHTML = JSON.stringify(questions[currentQuestion].answers);
     currentQuestion++;
 });
 
-function isItRight(choice) {
-    console.log(choice.target.className);
-    const target = choice.target.className;
-    if (target === questions[currentQuestion - 1].correctAnswer) {
-        correctNum++;
-        return verbiage.innerText = "Correct! Please hit next to continue";
-    } else {
-        return verbiage.innerText = "You wrong hoe";
+function didIWin() {
+    if (scorebox.innerHTML === '5') {
+        alert("You win!");
     }
 };
 
-// console.log(questions[currentQuestion].correctAnswer)
+function isItRight(choice) {
+    const target = choice.target.className;
+    if (target === questions[currentQuestion - 1].correctAnswer) {
+        correctNum++;
+        scorebox.innerHTML = correctNum;
+        didIWin();
+        return verbiage.innerText = "Correct! Please hit next to continue";
+    } else {
+        return verbiage.innerText = "You wrong dawg. Please guess again or hit next to continue";
+    }
+};
 
 btnA.addEventListener('click', isItRight);
 btnB.addEventListener('click', isItRight);
