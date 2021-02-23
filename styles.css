@@ -1,5 +1,5 @@
 body {
-
+    background-color: lightblue;
 }
 
 .top-container {
@@ -14,23 +14,14 @@ body {
     text-align: center;
     justify-content: left;
     float: left;
-    padding: 20px 20px 20px 20px;
+    padding: 50px 20px 50px 20px;
     background-color: aquamarine;
     border-width: 30px;
     margin: 50px 50px;
     margin-inline: 100px;
-}
-
-.win-box {
-    width: 50%;
-    text-align: center;
-    justify-content: right;
-    float: right;
-    padding: 20px 20px 20px 20px;
-    background-color: blueviolet;
-    border-width: 30px;
-    margin: 50px 50px;
-    margin-inline: 100px;
+    font-size: xx-large;
+    color: red;
+    font-weight: 900;
 }
 
 .middle-container {
@@ -40,21 +31,35 @@ body {
 }
 
 .question-box {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    padding-right: 200px;
-    padding-left: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-right: 150px;
+    padding-left: 150px;
     display: inline-block;
-    background-color: gray;
-    margin: 100px;
+    background-color: slateblue;
+    margin: 125px;
+    font-size: x-large;
 }
 
-.wrong {
-    display: flex;
-    margin-left: 900px;
-    margin-right: 35px;
-    justify-content: right;
-    background-color: red;
+.options-box {
+    background-color: slateblue;
+    color: black;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-right: 150px;
+    padding-left: 150px;
+    font-size: x-large;
+    display: inline-block;
+    margin: 125px
+}
+
+.next {
+    padding: 50px;
+    font-size: x-large;
+    margin-top: 100px;
+    float: right;
+    color: lightsalmon;
+    background-color: slateblue;
 }
 
 .bottom-container {
@@ -63,26 +68,39 @@ body {
     margin-top: 100px;
     margin-bottom: 35px;
     padding: 25px;
-    border: royalblue;
-    border-width: 30px;
+    border: black
+    border-width: 50px;
+    background-color: goldenrod;
 }
 
-.A {
+.a {
     margin-inline: 15px;
-    padding: 25px;
+    padding: 50px;
+    font-size: x-large;
+    background-color: black;
+    color: white;
 }
 
-.B {
+.b {
     margin-inline: 15px;
-    padding: 25px;
+    padding: 50px;
+    font-size: x-large;
+    background-color: black;
+    color: white;
 }
 
-.C {
+.c {
     margin-inline: 15px;
-    padding: 25px;
+    padding: 50px;
+    font-size: x-large;
+    background-color: black;
+    color: white;
 }
 
-.D {
+.d {
     margin-inline: 15px;
-    padding: 25px;
+    padding: 50px;
+    font-size: x-large;
+    background-color: black;
+    color: white;
 }

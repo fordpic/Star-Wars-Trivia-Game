@@ -1,25 +1,20 @@
 **GOALS**
-Have a random question appear on screen
-User will be able to select an answer from 4 possibilities
-If a user is right/wrong, the game will notify them
-Have an onscreen score counter
-Notify the player they have won once they reach 5 correct answers
+Have a random question appear on screen = DONE (not random)
+User will be able to select an answer from 4 possibilities = DONE
+If a user is right/wrong, the game will notify them = DONE
+Have an onscreen score counter = DONE
+Notify the player they have won once they reach 5 correct answers = DONE
 
 **NEXT STEPS** => will be marked off as I go along
-
-- Figure out event listeners for buttons, find way to pass object answer in as parameter to function
-- Need to add a winning condition that will alert you when you have won
 - Then, need to figure out how to get JSON formatting out on answer choices
 - Once those are done, make pretty with CSS
 Then you're done! You got this bro
 
 **NEED**
 CSS file that contains:
-    - Box for trivia question (text in middle)
-    - Box for player input (4 buttons)
-    - Box for player score (current game, up to 5)
-    - A hidden box for 'wrong' answers that flashes when the incorrect choice is made
-    - A hidden or static box for when you 'win'
+    - Box for trivia question (text in middle) = DONE
+    - Box for player input (4 buttons) = DONE
+    - Box for player score (current game, up to 5) = DONE
 
 HTML file will need:
     - DIVS for => Top container (banner)

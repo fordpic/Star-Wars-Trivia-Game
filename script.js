@@ -1,128 +1,122 @@
-const playerAnswer = [];
 const verbiage = document.querySelector('h2');
+const btnA = document.querySelector('.a');
+const btnB = document.querySelector('.b');
+const btnC = document.querySelector('.c');
+const btnD = document.querySelector('.d');
+const next = document.querySelector('.next');
+const questionBox = document.querySelector('.question-box');
+const optionsBox = document.querySelector('.options-box');
+const scorebox = document.querySelector('.player-score');
+
+let correctNum = 0;
+let currentQuestion = 0;
+
+
+
 const questions = [
 	{
         question: "Who was Luke Skywalker's first master? Was it:", 
         answers: {
-            a: "Obi-Wan Kenobi",
-            b: "Gandhi",
-            c: "Anakin Skywalker",
-            d: "Mace Windu",
+            a: "   A:    Obi-Wan Kenobi   ",
+            b: "   B:    Gandhi   ",
+            c: "   C:    Anakin Skywalker   ",
+            d: "   D:    Mace Windu   ",
         },
         correctAnswer: "a"
     },
     {
 	question: "In his first vicious & downright CGI duel with Count Dooku, which limb did Anakin Skywalker lose? Was it:",
     answers: {
-        a: "His left leg",
-        b: "The toes on his right foot",
-        c: "His right arm",
-        d: "His left ear",
+        a: "   A:   His left leg   ",
+        b: "   B:   The toes on his right foot   ",
+        c: "   C:   His right arm   ",
+        d: "   D:   His left ear   ",
     },
     correctAnswer: "c"
 },
 {
-    question: "On what planet did the Clone Wars begin?",
+    question: "On what planet did the Clone Wars truly begin? (Hint: Think creepy long-necks)",
 	 answers: {
-         a: "Naboo",
-         b: "Tatooine",
-         c: "Uranus",
-         d: "Geonosis",
+         a: "   A:   Naboo   ",
+         b: "   B:   Tatooine   ",
+         c: "   C:   Uranus   ",
+         d: "   D: Geonosis   ",
      },
      correctAnswer: "d"
     },
     {
 	question: "What world class, dashing young actor played the near invincible Qui-Gon Jinn in the visually stunning Episode 1?", 
     answers: {
-        a: "Tom Holland",
-        b: "Liam Neeson",
-        c: "Ford Pickert",
-        d: "Sarah Jessica Parker",
+        a: "   A:   Tom Holland   ",
+        b: "   B:   Liam Neeson   ",
+        c: "   C:   Ford Pickert   ",
+        d: "   D:   Sarah Jessica Parker   ",
     },
     correctAnswer: "b"
 },
 { 
 	question: "What was the name of the most infamous ship in the galaxy? (Hint: It was piloted by Indiana Jones & Bigfoot)",
      answers: {
-         a: "Starship STX-90",
-         b: "Copper Cougar", 
-         c: "Millenium Falcon",
-         d: "Lost Ark",
+         a: "   A:   Starship STX-90   ",
+         b: "   B:   Copper Cougar   ", 
+         c: "   C:   Millenium Falcon   ",
+         d: "   D:   Lost Ark   ",
      },
      correctAnswer: "c"
     },
     {
     question: "Which character absolutely annihilates the Death Star?",
     answers: {
-        a: "George Lucas",
-        b: "Han Solo", 
-        c: "Princess Leia",
-        d: "Luke Skywalker",
+        a: "   A:   George Lucas   ",
+        b: "   B:   Han Solo   ",
+        c: "   C:   Princess Leia   ",
+        d: "   D:   Luke Skywalker   ",
     },
     correctAnswer: "d"
 },
 {
     question: "What species of humanoids does Chewbacca belong to?",
     answers: {
-        a: "Wookie",
-        b: "Cookie",
-        c: "Snookie",
-        d: "Sasquatch",
+        a: "   A:   Wookie   ",
+        b: "   B:   Cookie   ",
+        c: "   C:   Snookie   ",
+        d: "   D:   Sasquatch   ",
     },
     correctAnswer: "a"
 },
 {
     question: "How far are we really from all this goodness?",
     answers: {
-        a: "Far away",
-        b: "Far, far away",
-        c: "Like two million miles",
-        d: "Really close actually",
+        a: "   A:   Far away   ",
+        b: "   B:   Far, far away   ",
+        c: "   C:   Like two million miles   ",
+        d: "   D:   Really close actually   ",
     },
     correctAnswer: "b"
 },
 {
     question: "Han Solo has a weirdo wannabe Sith kid with which iconic character (and actress!)?",
     answers: {
-        a: "R2-D2",
-        b: "Your mom",
-        c: "Princess Leia",
-        d: "Queen Padme Amidala",
+        a: "   A:   R2-D2   ",
+        b: "   B:   Your mom   ",
+        c: "   C:   Princess Leia   ",
+        d: "   D:   Queen Padme Amidala   ",
     },
     correctAnswer: "c"
 },
 {
-   question: "Complete this iconic line: 'Luke, I am your ___.'",
+   question: "Complete this iconic line that shook millions in its stead: 'Luke, I am your ___.'",
     answers: {
-        a: "Dude",
-        b: "Dad",
-        c: "Parental Unit",
-        d: "Father",
+        a: "   A:   Dude   ",
+        b: "   B:   Dad   ",
+        c: "   C:   Parental Unit   ",
+        d: "   D:   Father   ",
     },
     correctAnswer: "d"
 }
 ];
 
-const btnA = document.querySelector(".a");
-const btnB = document.querySelector(".b");
-const btnC = document.querySelector(".c");
-const btnD = document.querySelector(".d");
-const next = document.querySelector(".next");
-const questionBox = document.querySelector(".question-box");
-const optionsBox = document.querySelector(".options-box");
-const scorebox = document.querySelector(".player-score");
-// console.log(scorebox)
-// console.log(optionsBox);
-let correctNum = 0;
-let currentQuestion = 0;
-// console.log(questions[currentQuestion].answers);
 
-next.addEventListener('click', () => {
-    verbiage.innerText = "";
-    questionBox.innerHTML = questions[currentQuestion].question;
-    optionsBox.innerHTML = JSON.stringify(questions[currentQuestion].answers);
-    currentQuestion++;
-});
 
 function didIWin() {
     if (scorebox.innerHTML === '5') {
@@ -141,6 +135,21 @@ function isItRight(choice) {
         return verbiage.innerText = "You wrong dawg. Please guess again or hit next to continue";
     }
 };
+
+
+// next.addEventListener('click', () => {
+//     verbiage.innerText = "";
+//     questionBox.innerHTML = questions[currentQuestion].question;
+//     optionsBox.innerHTML = JSON.stringify(questions[currentQuestion].answers);
+//     currentQuestion++;
+// });
+
+next.addEventListener('click', () => {
+	verbiage.innerText = '';
+	questionBox.innerHTML = questions[currentQuestion].question;
+	optionsBox.innerHTML = Object.values(questions[currentQuestion].answers);
+	currentQuestion++;
+});
 
 btnA.addEventListener('click', isItRight);
 btnB.addEventListener('click', isItRight);
