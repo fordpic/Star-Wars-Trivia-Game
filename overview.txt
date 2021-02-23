@@ -6,8 +6,7 @@ Have an onscreen score counter = DONE
 Notify the player they have won once they reach 5 correct answers = DONE
 
 **NEXT STEPS** => will be marked off as I go along
-- Then, need to figure out how to get JSON formatting out on answer choices
-- Once those are done, make pretty with CSS
+- Make pretty with CSS
 Then you're done! You got this bro
 
 **NEED**
