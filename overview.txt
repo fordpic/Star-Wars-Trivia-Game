@@ -11,7 +11,7 @@ Notify the player they have won once they reach 5 correct answers = DONE
 - still want to hide & move answers box lower
 - get images for bottom part 
 - find better way to signal win 
-- light up choices red or green
+- light up choices red or green (DONE) need to reset back to white after
 
 Then you're done! You got this bro
 

@@ -120,7 +120,7 @@ const questions = [
 
 function didIWin() {
     if (scorebox.innerHTML === '5') {
-        alert("You win!");
+        alert("You win! You may hit ok and keep playing or refresh the page to start over");
     }
 };
 
@@ -129,20 +129,14 @@ function isItRight(choice) {
     if (target === questions[currentQuestion - 1].correctAnswer) {
         correctNum++;
         scorebox.innerHTML = correctNum;
+        choice.target.style.color = 'green';
         didIWin();
         return verbiage.innerText = "Correct! Please hit next to continue";
     } else {
+        choice.target.style.color = 'red';
         return verbiage.innerText = "You wrong dawg. Please guess again or hit next to continue";
     }
 };
-
-
-// next.addEventListener('click', () => {
-//     verbiage.innerText = "";
-//     questionBox.innerHTML = questions[currentQuestion].question;
-//     optionsBox.innerHTML = JSON.stringify(questions[currentQuestion].answers);
-//     currentQuestion++;
-// });
 
 next.addEventListener('click', () => {
 	verbiage.innerText = '';
