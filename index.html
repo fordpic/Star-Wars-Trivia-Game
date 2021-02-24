@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Wars Trivia</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+    </style>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-   
 
 
-   <div class="top-container">
-       <div class="player-score">SCORE</div>
-   </div>
-
-
-   <div class="middle-container">
-       <div class="question-box">QUESTION</div>
-       <div class="options-box"></div>
-       <div class="next-button">
-           <button type="button" class="next">NEXT</button>
-       </div>
-   </div>
-
-
-   <div class="bottom-container">
-       <h2></h2>
-        <div class="player-input">
-            <button type="button" class="a">A</button>
-            <button type="button" class="b">B</button>
-            <button type="button" class="c">C</button>
-            <button type="button" class="d">D</button>
+    <div class="grid-container">
+        <div class="grid-item grid-item1">
+            <div class="player-score">SCORE</div>
         </div>
-   </div>
-<script src="script.js"></script>
+
+
+        <div class="grid-item grid-item2">
+            <div class="question-box">WELCOME TO STAR WARS TRIVIA!<br><br><br><br>PLEASE SELECT 'NEXT' BELOW TO PROCEED
+            </div>
+            <div class="options-box">ALL SHITTY FRONTEND DESIGN BY:<br>FORD PICKERT</div>
+            <div class="next-button">
+                <button type="button" class="next">NEXT ➡</button>
+            </div>
+        </div>
+
+
+        <div class="grid-item grid-item3">
+            <h2></h2>
+            <div class="player-input">
+                <button type="button" class="a">A</button>
+                <button type="button" class="b">B</button>
+                <button type="button" class="c">C</button>
+                <button type="button" class="d">D</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>

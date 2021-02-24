@@ -7,7 +7,15 @@ Notify the player they have won once they reach 5 correct answers = DONE
 
 **NEXT STEPS** => will be marked off as I go along
 - Make pretty with CSS
+
+- still want to hide & move answers box lower
+- get images for bottom part 
+- find better way to signal win 
+- light up choices red or green
+
 Then you're done! You got this bro
+
+Space Image used for background: https://unsplash.com/photos/OVO8nK-7Rfs
 
 **NEED**
 CSS file that contains:
