@@ -33,25 +33,23 @@ body {
     padding: 20px 0px 20px 0px;
     background-color: goldenrod;
     border-width: 30px;
-    margin: 20px 20px;
-    margin-inline: 100px;
+    /* margin: 20px 20px; */
+    /* margin-inline: 100px; */
     font-size: xx-large;
     color: red;
     font-weight: 900;
 }
 
 .grid-item2 {
-    /* display: flex; */
     justify-content: center;
     text-align: center;    
 }
 
 .question-box {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-right: 100px;
-    padding-left: 100px;
-    /* margin: 100px; */
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 80px;
+    padding-left: 80px;
     background-color: gray;
     color: white;
     justify-self: center;
@@ -64,19 +62,18 @@ body {
 .options-box {
     background-color: grey;
     color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
     font-size: x-large;
-    margin: 10px;
     border: solid #000;
     border-width: 3px 3px 3px 3px;
     border-color: goldenrod;
 }
 
 .next {
-    padding: 50px;
+    padding: 40px;
     font-size: x-large;
     margin-bottom: 10px;
     float: right;
