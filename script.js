@@ -140,9 +140,19 @@ function isItRight(choice) {
 
 next.addEventListener('click', () => {
 	verbiage.innerText = '';
+    optionsBox.innerHTML = '';
 	questionBox.innerHTML = questions[currentQuestion].question;
-	optionsBox.innerHTML = Object.values(questions[currentQuestion].answers);
+	// optionsBox.innerHTML = 
+    Object.values(questions[currentQuestion].answers).forEach((answer) => {
+        const box = document.createElement('p');
+        box.innerText = answer;
+        optionsBox.appendChild(box);
+    })
 	currentQuestion++;
+    btnA.style.color = 'white';
+    btnB.style.color = 'white';
+    btnC.style.color = 'white';
+    btnD.style.color = 'white';
 });
 
 btnA.addEventListener('click', isItRight);
