@@ -17,6 +17,8 @@ Then you're done! You got this bro
 
 Space Image used for background: https://unsplash.com/photos/OVO8nK-7Rfs
 
+Star Wars free logo image used: https://logos-download.com/wp-content/uploads/2016/09/Star_Wars_logo_logotype.png
+
 **NEED**
 CSS file that contains:
     - Box for trivia question (text in middle) = DONE

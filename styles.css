@@ -33,8 +33,6 @@ body {
     padding: 20px 0px 20px 0px;
     background-color: goldenrod;
     border-width: 30px;
-    /* margin: 20px 20px; */
-    /* margin-inline: 100px; */
     font-size: xx-large;
     color: red;
     font-weight: 900;
@@ -46,10 +44,10 @@ body {
 }
 
 .question-box {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
     background-color: gray;
     color: white;
     justify-self: center;
@@ -62,10 +60,10 @@ body {
 .options-box {
     background-color: grey;
     color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 80px;
+    padding-left: 80px;
     font-size: x-large;
     border: solid #000;
     border-width: 3px 3px 3px 3px;
@@ -76,6 +74,7 @@ body {
     padding: 40px;
     font-size: x-large;
     margin-bottom: 10px;
+    margin-top: 10px;
     float: right;
     color: white;
     background-color: grey;
@@ -88,14 +87,13 @@ body {
 .grid-item3 {
     justify-content: center;
     text-align: center;
-    padding: 25px 0px;
+    padding: 25px 30px;
     border: black;
     border-width: 50px;
     background-color: goldenrod;
 }
 
 .a {
-    /* margin-inline: 15px; */
     padding: 25px;
     font-size: x-large;
     background-color: black;
@@ -104,7 +102,6 @@ body {
 }
 
 .b {
-    /* margin-inline: 15px; */
     padding: 25px;
     font-size: x-large;
     background-color: black;
@@ -113,7 +110,6 @@ body {
 }
 
 .c {
-    /* margin-inline: 15px; */
     padding: 25px;
     font-size: x-large;
     background-color: black;
@@ -122,7 +118,6 @@ body {
 }
 
 .d {
-    /* margin-inline: 15px; */
     padding: 25px;
     font-size: x-large;
     background-color: black;
