@@ -60,10 +60,10 @@ body {
 .options-box {
     background-color: grey;
     color: white;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
     font-size: x-large;
     border: solid #000;
     border-width: 3px 3px 3px 3px;
