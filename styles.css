@@ -12,6 +12,7 @@ body {
 }
 
 .grid-container {
+    /* Yay for grid! */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     max-width: 100vw;
@@ -28,8 +29,8 @@ body {
 .player-score {
     width: 50%;
     text-align: center;
-    justify-content: left;
-    float: left;
+    justify-content: left; /* <-- this probably doesn't validate 😱 */
+    float: left; 
     padding: 20px 0px 20px 0px;
     background-color: goldenrod;
     border-width: 30px;
@@ -124,3 +125,19 @@ body {
     color: white;
     font-family: 'DotGothic16', sans-serif;
 }
+
+/* To reduce all of the repetition in your CSS, you could either
+create a single class such as "answer-button" and apply that to 
+the .a, .b, .c, .d elements or just rewrite these as:
+
+.a, .b, .c, .d {
+    padding: 25px;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+The comma in between each selector means 'apply these styles to 
+any of these classes' so it acts like an OR.
+*/
