@@ -139,10 +139,19 @@ function isItRight(choice) {
 };
 
 next.addEventListener('click', () => {
-	verbiage.innerText = '';
+    // One small improvement you could make here is to remove the child elements
+    // using a while loop.  From a performance standpoint this is dramatically
+    // faster than setting the innerHTML to an empty string (but this is a really
+    // small, nit-picky, micro-optimization.  If there was anything else to comment
+    // in your code I wouldn't have mentioned it 😀).  See an example here:
+    // https://stackoverflow.com/a/51836513/3577849
+	verbiage.innerText = '';  
     optionsBox.innerHTML = '';
+
+
 	questionBox.innerHTML = questions[currentQuestion].question;
 	// optionsBox.innerHTML = 
+    // ❤️ the use of Object.values() here!	
     Object.values(questions[currentQuestion].answers).forEach((answer) => {
         const box = document.createElement('p');
         box.innerText = answer;
